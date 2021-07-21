@@ -1,14 +1,14 @@
 /* eslint-disable indent */
 const myMap = (arr, callback) => {
     const newArr = [];
-    let index = -1;
+    let index = 0;
     
     for (const item of arr) {
-        index++;
         if(!(item))
         newArr[index] = (item);
         else
         newArr[index] = callback(item);
+        index++;
     }
     return newArr;
 };
