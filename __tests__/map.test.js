@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-const { myMap } = require('./map');
+const { myMap } = require('../map');
 
 
 describe('myMap', () => {
