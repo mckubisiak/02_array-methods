@@ -6,11 +6,9 @@ const myFilter = (arr, callback) => {
     for (let index = 0; index < arr.length; index++) {
         const item = arr[index];
         if(callback(item) === true) {
-        // newArr[index] = (item);
         newArr = [...newArr, item];
     }
 }
-console.log(newArr);
     return newArr;
 };
 
