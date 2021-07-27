@@ -8,7 +8,14 @@ const reduce = (arr, callback, intialValue) => {
     }
     return accumlator;
     }
+    if((intialValue)) {
+        let accumlator = intialValue;
+        for (let index = 1; index < arr.length; index++) {
+        const item = arr[index];
+        accumlator = callback(accumlator, item);
+        }
+    return accumlator;
+    }
 };
 module.exports = { reduce };
-
 
