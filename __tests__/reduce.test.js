@@ -10,11 +10,8 @@ describe('reduce', () => {
         };
         const actual = reduce([7, 8, 9, 10], callBackFunction);
         const expected =  34;
-
         expect(actual).toEqual(expected);
     });
-
-    
 
 });
 
