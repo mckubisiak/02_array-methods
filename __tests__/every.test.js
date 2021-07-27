@@ -12,6 +12,15 @@ describe('every', () => {
         expect(actual).toEqual(expected);
     });
 
+
+    it('Takes an Array and callback of signature item => {} and returns an overall true value if all callback return true or a truthy value', () => {
+
+        const callBackFunction = (item) => item === 5;
+        const actual = every([5, 5, 5, 5, 5], callBackFunction);
+        const expected =  true;
+
+        expect(actual).toEqual(expected);
+    });
 });
 
 

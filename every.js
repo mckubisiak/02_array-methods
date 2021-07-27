@@ -7,7 +7,7 @@ const every = (arr, callback) => {
         const newItem = callback(item);
 
         if(newItem) {
-            return;
+            return true;
         } else return false;
     }
 };
