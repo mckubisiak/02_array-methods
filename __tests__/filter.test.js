@@ -6,7 +6,7 @@ describe('myFilter', () => {
 
     it('filters out by callback', () => {
 
-        const callBackFunction = (identifer) => identifer === 0;
+        const callBackFunction = (item) => item === 0;
         const actual = myFilter([1, 3, 5, 0, 9, 5], callBackFunction);
         const expected =  [0];
 

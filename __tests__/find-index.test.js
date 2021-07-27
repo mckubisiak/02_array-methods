@@ -6,7 +6,7 @@ describe('findIndex', () => {
 
     it('filters out', () => {
 
-        const callBackFunction = (identifer) => identifer === 5;
+        const callBackFunction = (item) => item === 5;
         const actual = findIndex([1, 3, 5, 0, 9, 5], callBackFunction);
         const expected =  5;
 
@@ -15,7 +15,7 @@ describe('findIndex', () => {
 
     it('filters out', () => {
 
-        const callBackFunction = (identifer) => identifer === 9;
+        const callBackFunction = (item) => item === 9;
         const actual = findIndex([1, 3, 5, 0, 9, 5], callBackFunction);
         const expected =  9;
 

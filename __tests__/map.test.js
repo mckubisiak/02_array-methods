@@ -5,7 +5,7 @@ describe('myMap', () => {
 
     it('TEXT takes an array and a function(STRING) to create a new array modified by the callback', () => {
 
-        const callBackFunction = (identifer) => identifer + '! What did you say to me?';
+        const callBackFunction = (item) => item + '! What did you say to me?';
         const actual = myMap(['PUNK', 'Mom', 'officer'], callBackFunction);
         const expected =  ['PUNK! What did you say to me?', 'Mom! What did you say to me?', 'officer! What did you say to me?'];
 
