@@ -9,7 +9,7 @@ const reduce = (arr, callback, intialValue) => {
     return accumlator;
     }
     if((intialValue)) {
-        let accumlator = intialValue;
+        let accumlator = arr[0] + intialValue;
         for (let index = 1; index < arr.length; index++) {
         const item = arr[index];
         accumlator = callback(accumlator, item);
